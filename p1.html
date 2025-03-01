@@ -4,52 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Info Form</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .container { width: 50%; margin: auto; }
-        .section { margin-bottom: 20px; }
-        label { display: block; font-weight: bold; margin-top: 10px; }
-        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
-        .radio-group, .checkbox-group { display: flex; gap: 10px; }
-        .captcha { font-family: monospace; font-size: 20px; margin-top: 10px; }
-    </style>
 </head>
+<style>
+    body{
+        display: flex;
+        margin: 0 auto;
+    }
+    .container{
+        padding: 30px;
+    }
+</style>
 <body>
     <div class="container">
         <h2>Basic Info</h2>
         <div class="section">
-            <label>Employee ID</label>
-            <input type="text" value="" readonly>
+            <label><b>Employee ID</b></label>
+            9<br>
             
-            <label>Last Name</label>
-            <input type="text">
-            
-            <label>First Name</label>
-            <input type="text">
-            
-            <label>Gender</label>
-            <div class="radio-group">
-                <input type="radio" name="gender" value="male"> Male
-                <input type="radio" name="gender" value="female"> Female
-                <input type="radio" name="gender" value="xxx"> XXX
+            <label><b>Last Name</b></label>
+            Dodsworth
+            <br>
+            <label><b>First Name</b></label>
+            <input type="text" value="Anne">
+            <br>
+            <label><b>Gender</b></label>
+            <div>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="xxx"> XXX<br>
                 <input type="radio" name="gender" value="zzz" checked> ZZZ
             </div>
             
-            <label>Title</label>
-            <input type="text" >
-            
-            <label>Suffix</label>
+            <label><b>Title</b></label>
+            <input type="text" value="Sales Represenantive">
+            <br>
+            <label><b>Suffix</b></label>
             <input type="text">
-            
+            <br>
             <label>Birth Date</label>
             <input type="datetime-local">
-            
+            <br>
             <label>Hire Date</label>
             <input type="datetime-local">
-            
+            <br>
             <label>SSN # (if applicable)</label>
             <input type="text">
-            
+            <br>
             <label>Reports To</label>
             <select>
                 <option>Buchanan</option>
@@ -60,27 +60,27 @@
         <div class="section">
             <label>Email</label>
             <input type="email" value="name@example.com">
-            
+            <br>
             <label>Address</label>
-            <input type="text" >
-            
+            <input type="text" value="7 Houndstooth Rd." >
+            <br>
             <label>City</label>
-            <input type="text" >
-            
+            <input type="text" value="London" >
+            <br>
             <label>Region</label>
             <input type="text">
-            
+            <br>
             <label>Postal Code</label>
-            <input type="text" >
-            
+            <input type="text" value="WG2 7LT" >
+            <br>
             <label>Country</label>
             <select>
                 <option>Russian Federation</option>
             </select>
-            
+            <br>
             <label>US Home Phone</label>
             <input type="text" value="(234)234-2342">
-            
+            <br>
             <label>Photo</label>
             <input type="text" value="EmpID9.bmp">
         </div>
@@ -92,16 +92,16 @@
             
             <label>Preferred Shift</label>
             <div class="checkbox-group">
-                <input type="checkbox" value="regular"> Regular
-                <input type="checkbox" value="graveyard" checked> Graveyard
+                <input type="checkbox" value="regular"> Regular<br>
+                <input type="checkbox" value="graveyard" checked> Graveyard<br>
             </div>
-            
+            <br>
             <label>Active?</label>
             <input type="checkbox" checked>
-            
+            <br>
             <label>Are you human?</label>
             <div class="captcha">TIDAWO</div>
-            <input type="text" placeholder="Enter CAPTCHA">
+            <input type="text" >
         </div>
         
         <button type="submit">Submit</button>
